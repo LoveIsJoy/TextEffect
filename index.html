@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="index.scss" />
+    <script src="index.js"></script>
+    <link rel="icon" href="../textEffect/favicon.ico" />
+    <title>Love U Joy</title>
+    <meta name="description" content="사랑하는 김혜진❤️ 김조이❤️ 김뽀뽀라❤️" />
+  </head>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+    html {
+      height: 100%;
+    }
+
+    body {
+      font-family: "Fjalla One", sans-serif;
+      background: linear-gradient(to bottom, #405166 0%, #656f6f 100%);
+    }
+
+    .container {
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      display: block;
+      position: absolute;
+      max-width: 30%;
+    }
+
+    .button {
+      float: left;
+      position: relative;
+      bottom: -65px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-10deg);
+      color: #e55643;
+      text-transform: uppercase;
+      opacity: 0;
+      visibility: hidden;
+      cursor: pointer;
+      font-size: 2em;
+    }
+    .button span {
+      transform: skew(-10deg);
+      display: block;
+      float: left;
+      text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px,
+        #533d4a 4px 4px;
+    }
+
+    h1 {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 42px;
+      margin: 0;
+      line-height: 47px;
+      letter-spacing: 2px;
+    }
+
+    .title {
+      transform: translateX(-50%) rotate(-10deg);
+      display: block;
+      float: left;
+      left: 50%;
+      position: relative;
+    }
+    .title span {
+      transform: skew(-10deg);
+      display: block;
+      float: left;
+      text-shadow: #533d4a 1px 1px, #533d4a 2px 2px, #533d4a 3px 3px,
+        #533d4a 4px 4px, #533d4a 5px 5px, #533d4a 6px 6px;
+      min-width: 10px;
+      min-height: 10px;
+      position: relative;
+    }
+
+    /* h1 > span:nth-child(1) {
+      color: #e55643;
+    }
+    h1 > span:nth-child(2) {
+      color: #e55643;
+    }
+    h1 > span:nth-child(3) {
+      color: #f1c83c;
+    }
+    h1 > span:nth-child(4) {
+      color: #f1c83c;
+    } */
+    .title {
+      font-size: 2em;
+    }
+    .title > span:nth-child(5) {
+      color: #e55643;
+    }
+    .container > h1 > span {
+      color: #f1c83c;
+      margin-bottom: 15px;
+    }
+    h1 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+    }
+  </style>
+  <body>
+    <section class="container">
+      <h1>
+        <span class="title">사랑해 ❤️</span>
+        <span class="title">김혜진 ❤️</span>
+        <span class="title">김조이 ❤️</span>
+        <span class="title">김뽀라 ❤️</span>
+      </h1>
+      <div class="button">restart</div>
+    </section>
+  </body>
+</html>
